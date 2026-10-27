@@ -1,0 +1,36 @@
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# Machine Learning & CatBoost artifacts
+catboost_info/
+*.log
+uvicorn.log
+
+# Large Datasets & Raw Waveform Files
+Dataset/records100/
+Dataset/records500/
+*.zip
+
+# Generated Intermediate Feature Arrays & Splits
+data/*.npy
+data/features.csv
+
+# Heavy Model Binary Files (>100MB)
+models/*.pkl
+!models/clinical_imputer.json
+!models/clinical_threshold.json
+!models/feature_schema.json
+
+# IDE & OS Junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
